@@ -7,6 +7,10 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    font-size: 45%;
+  }
 }
 
 body {
@@ -19,6 +23,11 @@ body {
   align-items: flex-start;
   justify-content: center;
   background: linear-gradient(to top left, #28b487, #7dd56f);
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .show-modal {
@@ -71,6 +80,11 @@ p {
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+
+  @media (max-width: 425px) {
+    padding: 4rem;
+    width: 82%;
+  }
 }
 
 .overlay {
